@@ -1630,13 +1630,13 @@ appearance:none;
   -webkit-appearance:none;
  background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
  padding-right: 10px;
-  max-width: 67px;
+  max-width: 75px;
   overflow: hidden;
   height: 30px;
   padding-right: 14px;
   margin-left:10px ;
   margin-right:5px ;
-  font-size: 1rem;
+  font-size: 0.8rem;
  line-height:30px;
   
 }
