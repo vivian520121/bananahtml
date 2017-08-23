@@ -1585,7 +1585,11 @@ float: left;
 .header{
 	width: 100%;
 	height:50px ;
+<<<<<<< HEAD
 	line-height: 70px;
+=======
+	line-height: 50px;
+>>>>>>> first_commit
 	position: relative;
 	
 }
@@ -1630,14 +1634,23 @@ appearance:none;
   -webkit-appearance:none;
  background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
  padding-right: 10px;
+<<<<<<< HEAD
   max-width: 75px;
+=======
+  max-width: 67px;
+>>>>>>> first_commit
   overflow: hidden;
   height: 30px;
   padding-right: 14px;
   margin-left:10px ;
   margin-right:5px ;
+<<<<<<< HEAD
   font-size: 0.8rem;
  line-height:30px;
+=======
+  font-size: 1rem;
+ 
+>>>>>>> first_commit
   
 }
 
@@ -2055,4 +2068,8 @@ select::-ms-expand {
 .end img{
 	width: 100%;
 	height: 100%;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> first_commit
