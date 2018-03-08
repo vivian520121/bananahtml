@@ -40,7 +40,28 @@
 			"dhtmlgoodies_calendar/dhtmlgoodies_calendar.css",
 			"js/jquery.min.js",
 			"templates/home-new.html",
-			"templates/home-special.html"
+			"templates/home-special.html",
+			"templates/home-class.html",
+			"js/services/userservice.js",
+			"js/services/utilservice.js",
+			"js/config/router.js",
+			"js/controllers/person.js",
+			"js/services/friendservice.js",
+			"js/services/homeservice.js",
+			"js/services/startservice.js",
+			"js/controllers/friend.js",
+			"js/services/storageservice.js",
+			"js/controllers/start.js",
+			"js/config/config.js",
+			"js/controllers/home.js",
+			"js/services/registerservice.js",
+			"js/controllers/tab.js",
+			"js/services/msgservice.js",
+			"js/services/httpinterceptor.js",
+			"js/controllers/register.js",
+			"js/services/personservice.js",
+			"js/controllers/login.js",
+			"js/services/jpushService.js"
 		]
 	}
 }

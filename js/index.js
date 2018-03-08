@@ -69,11 +69,24 @@ function showBox(){
     box.style.display="block";
 }
 
+
   function cancelbox(){
      var box=document.getElementById('pinglun-box');
       box.style.display="none";
   }
 
+function showface(){
+	var facebox=document.getElementById('facebox');
+	if(facebox.style.display="none"){
+		facebox.className="newclass";
+	}
+	else{
+		facebox.className="old";
+	}
+	}
+
+	
+	
 
 
 function add(){
@@ -87,11 +100,39 @@ function add(){
   document.getElementById("text_box1").value =  parseInt(document.getElementById("text_box1").value) +1;
 }
 	}
- function minus(){
+function minus(){
     if(document.getElementById("text_box1").value > 1){
         document.getElementById("text_box1").value =parseInt( document.getElementById("text_box1").value) - 1;
     }
 }
+ 
+function add2(){
+  
+
+	
+  document.getElementById("text_box2").value =  parseInt(document.getElementById("text_box2").value) +1;
+
+	}
+ function minus2(){
+    if(document.getElementById("text_box2").value > 1){
+        document.getElementById("text_box2").value =parseInt( document.getElementById("text_box2").value) - 1;
+    }
+}
+ 
+ function add3(){
+  
+
+	
+  document.getElementById("text_box3").value =  parseInt(document.getElementById("text_box3").value) +1;
+
+	}
+ function minus3(){
+    if(document.getElementById("text_box3").value > 1){
+        document.getElementById("text_box3").value =parseInt( document.getElementById("text_box3").value) - 1;
+    }
+}
+ 
+ 
 var buy_button=document.getElementsByClassName("buy_button")
 buy_button.click=function (){
   var buy=document.getElementsByClassName("buy");
@@ -214,6 +255,38 @@ pitch[i].onclick=function(){
 
 }
   
+    var  datechange =function(){
+      var lis = document.getElementById("dateul").getElementsByTagName("li");
+   
+    for(var i=0; i<lis.length; i++){
+
+
+        lis[i].index = i;
+
+
+      lis[i].onclick = function(){
+
+
+              for(var j=0; j<lis.length; j++){
+                lis[j].className = "";
+                   lis[j].style.border="1px solid #A0A0A0";
+
+              }
+
+
+              this.className ="hover";
+              this.style.border="1px solid #FFFFFF"
+
+
+         
+
+
+
+
+      }
+    }
+
+}
   
   
   

@@ -1,4 +1,4 @@
-<ion-view>
+<!--<ion-view>
 	<ion-nav-bar class="stable-bg" align-title="center">
     <ion-nav-title>
     	登录
@@ -10,11 +10,11 @@
         <div class="inputbox">
           
             <i class="icon placeholder-icon ion-ios-person light"></i>
-            <input placeholder="请输入手机号" class="login_input" type="number"  name="number" required ng-minlength="11" ng-maxlength="11" ng-model="user.number">
+            <input placeholder="请输入手机号" class="login_input" type="number"  name="number" required ng-minlength="11" ng-maxlength="11" ng-model="user.number" ng-model="vm.telephone">
       
         </div>
         <div class="inputbox"><i class="icon placeholder-icon ion-unlocked light"></i>
-        	<input placeholder="请输入密码" class="login_input" name="password" required ng-pattern="/[a-zA-Z0-9]/" ng-maxlength="30" ng-minlength="6" ng-model="user.password" >
+        	<input ng-model="vm.pass" placeholder="请输入密码" class="login_input" name="password" required ng-pattern="/[a-zA-Z0-9]/" ng-maxlength="30" ng-minlength="6" ng-model="user.password" >
         </div>
         </form>
         <p class="usererr  padding" ng-show="loginForm.number.$dirty && loginForm.number.$invalid">手机号输入有误</p>
@@ -25,5 +25,32 @@
 	<p class="logitit">使用第三方账号登录</p>
 	<img src="img/weixing.png">
 </div>
+    </ion-content>
+</ion-view>-->
+	<ion-view>
+	<ion-nav-bar class="stable-bg" align-title="center">
+    <ion-nav-title>
+    	登录
+    </ion-nav-title>
+</ion-nav-bar>
+
+    <ion-content class=" has-header bgcolor" overflow-scroll="false">
+    		<form name="loginForm" novalidate>
+        <div class="inputbox">
+          
+            <i class="icon placeholder-icon ion-ios-person light"></i>
+            <input ng-model="vm.telephone" placeholder="请输入手机号" class="login_input" type="tel" >
+      
+        </div>
+        <div class="inputbox"><i class="icon placeholder-icon ion-unlocked light"></i>
+        	<input ng-model="vm.pass" type="password" placeholder="请输入密码" class="login_input"  >
+        </div>
+       </form>
+	<button class="loginbtn" ng-click="login()">登录</button>
+	<p class="light register" ui-sref="register">快速注册</p>
+	<div class="seg">
+		<p class="logitit">使用第三方账号登录</p>
+		<img src="img/weixing.png">
+	</div>
     </ion-content>
 </ion-view>

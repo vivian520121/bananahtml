@@ -1,5 +1,5 @@
 <ion-view view-title="活动详情">
-    <ion-content class="stable-bg"   on-scroll="toTopScroll()">
+    <ion-content class="stable-bg"   on-scroll="toTopScroll()" >
     
 <ion-slide-box  auto-play="true" does-continue="true" slide-interval="2000" id="top">
     <ion-slide>
@@ -25,17 +25,50 @@
         </div>
         <div class="light-bg" style="padding-left: 20px;"><img src="img/dizhi2.png" width="20px" height="20px" style="margin-top: 10px; margin-right:10px ;"><span class="dismess" style="position: absolute;margin-top: 10px;">集合地:浙江省 杭州</span></div>
       
-       
-       	<form>
+
        	<div class="datebanner light-bg">
        		<div class="dateimg"><img src="img/date.png" width="20px" height="20px"></div>
        	   
-       	    <div onclick="displayCalendar(document.forms[0].theDate,'yyyy/mm/dd',this)" class="choosedate">选择日期<i class="ion ion-chevron-down" style="margin-left:5px ;"></i></div>
-       	 <div class="inpbanner"><input type="button" class="theDate light-bg " value="2017/07/26" readonly name="theDate" ></div>
+       	    <div  class="choosedate">选择日期</div>
+       	 
        	
        	</div>
    
-       	</form>
+   
+   	    <ion-scroll  zooming="true" direction="x" style="width: 500px; height: 75px"> 
+   	  	<div class="datewrapper light-bg">
+   	<ul class="dateul" id="dateul">
+   	   <li class="datebox">
+   	   	<p>08-23(周三)</p>
+   	   	<p class="price3">￥329</p>
+   	   </li>
+   	
+   	 <li class="datebox">
+   	   	<p>08-24(周四)</p>
+   	   	<p class="price3">￥329</p>
+   	   </li>
+   	
+   	
+   	 <li class="datebox">
+   	   	<p>08-25(周五)</p>
+   	   	<p class="price3">￥329</p>
+   	   </li>
+   	   
+   	    <li class="datebox">
+   	   	<p>08-26(周六)</p>
+   	   	<p class="price3">￥329</p>
+   	   </li>
+   	   
+   	    <li class="datebox">
+   	   	<p>08-27(周日)</p>
+   	   	<p class="price3">￥329</p>
+   	   </li>
+   	   
+   	 
+   	   </ul> 
+   	  	</div> 
+   	  </ion-scroll> 
+
        <div class="datebanner light-bg" ui-sref="frame.pannel">
        	<img src="img/1.jpg">	<img src="img/2.jpg">	<img src="img/3.jpg"><img src="img/4.jpg"> 
        	<span style="float: right;margin-top: -5px;">55人报名 <span style="color: #FDD87E; font-size:20px ;">></span></span>
@@ -101,7 +134,7 @@
 	
 	
 	</div>
-	 <div class="buy_button2 light" ui-sref="frame.payorder2" >立即购买</div> 
+	 <div class="buy_button2 light" ui-sref="frame.ordermess" >立即购买</div> 
 
 </div>
     <div class="top"ng-show='showTop' ng-click="returntop();"><img src="img/top.png"></div>

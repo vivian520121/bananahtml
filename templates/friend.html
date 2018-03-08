@@ -51,8 +51,8 @@
     </textarea>
     <div class="replay">
     	<ul class="face">
-    		<li><img src="img/smile.png" width="30px"height="30px">
-    		<ul>
+    		<li onclick="showface();"><img src="img/smile.png" width="30px"height="30px">
+    		<ul id="facebox" class="oldclass">
     			<li><a href="javascript:insertIcon('[微笑]')"><img border="0" src="img/face/0.gif"/></a></li>
     		  <li><a href="javascript:insertIcon('[龇牙]')"><img border="0" src="img/face/1.gif"/></a></li>
     		 <li><a href="javascript:insertIcon('[憨笑]')"><img border="0" src="img/face/2.gif"/></a></li>
@@ -85,7 +85,8 @@
     		</ul></li>
     		<li><button class="button button-small button-outline button-stable btn" onclick="cancelbox();" id="cancel">取消</button></li> 
     	<li><button class="button button-small button-positive btn">回复</button></li>
-    	</ul></form>
+    	</ul>
+	</form>
         
         
     </div>
